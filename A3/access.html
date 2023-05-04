@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="utf-8"/>
+        <title>Grant/Revoke Access</title>
+        <link rel="stylesheet" href="mystyle.css">
+    </head>
+    <body>
+        <header>
+            <h1>James Sieben's Note Application</h1>
+            <p class="username">Hello <b>jls273!</b><input class="logoutbutton" type="button" value="logout" onclick="window.location.href='./login.html'"/></p>
+        </header>
+
+        <div class="container">
+            <div class="backbutton"><input class="backbutton" type="button" value="back" onclick="history.back()"/></div>
+            <h2 class="mainheader">Note 1</h2>
+            <div class="withaccess">
+                <h2>Users with access:</h2>
+
+                <div class="user">
+                    <img src="creatorpic.jpg" alt="Creator Picture" class="picture">
+                    <div class="name">User 1</div>
+                    <div class="access-gr"><input class="button" type="button" value="revoke"/></div>
+                </div>
+
+                <div class="user">
+                    <img src="creatorpic.jpg" alt="Creator Picture" class="picture">
+                    <div class="name">User 2</div>
+                    <div class="access-gr"><input class="button" type="button" value="revoke"/></div>
+                </div>
+
+                <div class="user">
+                    <img src="creatorpic.jpg" alt="Creator Picture" class="picture">
+                    <div class="name">User 3</div>
+                    <div class="access-gr"><input class="button" type="button" value="revoke"/></div>
+                </div>
+
+                <div class="user">
+                    <img src="creatorpic.jpg" alt="Creator Picture" class="picture">
+                    <div class="name">User 4</div>
+                    <div class="access-gr"><input class="button" type="button" value="revoke"/></div>
+                </div>
+            </div>
+
+            <div class="withoutaccess">
+                <h2>Users without access:</h2>
+
+                <div class="user">
+                    <img src="creatorpic.jpg" alt="Creator Picture" class="picture">
+                    <div class="name">User 5</div>
+                    <div class="access-gr"><input class="button" id="button2" type="button" value="grant"/></div>
+                </div>
+
+                <div class="user">
+                    <img src="creatorpic.jpg" alt="Creator Picture" class="picture">
+                    <div class="name">User 6</div>
+                    <div class="access-gr"><input class="button" id="button3" type="button" value="grant"/></div>
+                </div>
+
+                <div><input class="searchbutton" type="button" value="Search"/></div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="utf-8"/>
+        <title>Login</title>
+        <link rel="stylesheet" href="mystyle.css">
+        <script type="text/javascript" src="validateLogin.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>James Sieben's Note Application</h1>
+        </header>
+        <div class="container" id="container-other">
+            <div class="item2">
+                <h1>Hello!</h1>
+                <h1>Please Login</h1>
+
+                <form id="Login" class="login" method="POST" action="http://www.webdev.cs.uregina.ca/~jls273/A3/notelist.html">
+
+                    <label id="msg_email" class="err_msg"></label>
+                    <div class="input">
+                        <input id="box" type="text" name="email"/>
+                        <div class="username-label" data-dynamic-label-for="username">Email address</div>
+                    </div>
+
+                    <label id="msg_pswd" class="err_msg"></label>
+                    <div class="input">
+                        <input id="box2" type="password" name="pswd"/>
+                        <div class="password-label" data-dynamic-label-for="username">Password</div>
+                    </div>
+
+                    <input type="button" class="forgot" value="Forgot password?"/>
+
+                    <div class="input">
+                        <input type="submit" class="button-continue" id="box3" value="Continue"/>
+                    </div>
+
+                    <div class="input">
+                        <p>Or <input type="button" class="signup" value="sign up" onclick="window.location.href='./signup.html'"/></p>
+                    </div>
+
+                    <div id="display_info"></div>
+
+                </form>
+
+                <script type="text/javascript" src="validateLogin-r.js"></script>
+
+            </div>
+        </div>
+    </body>
+</html>

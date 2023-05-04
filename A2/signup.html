@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="utf-8"/>
+        <title>Signup</title>
+        <link rel="stylesheet" href="mystyle.css">
+    </head>
+    <body>
+        <header>
+            <h1>James Sieben's Note Application</h1>
+        </header>
+        <div class="container" id="container-other">
+            <div class="item2">
+                <h1>Please create an account</h1>
+
+                <form class="login" method="POST">
+                    <div class="input">
+                        <input id="box" inputmode="email" type="text" name="email">
+                        <div class="username-label" data-dynamic-label-for="username">Email address</div>
+                    </div>
+                    <div class="input">
+                        <input id="box2" inputmode="username" type="text" name="username">
+                        <div class="username-label" data-dynamic-label-for="username">Username</div>
+                    </div>
+                    <div class="input">
+                        <input id="box3" inputmode="password" type="text" name="password">
+                        <div class="password-label" data-dynamic-label-for="username">Password</div>
+                    </div>
+                    <div class="input">
+                        <input id="box4" inputmode="password" type="text" name="confirmpassword">
+                        <div class="password-label" data-dynamic-label-for="username">Confirm password</div>
+                    </div>
+                    <div class="input2">
+                        <p>Upload a profile picture: <input type="file"/></p>
+                    </div>
+                    <div class="input">
+                        <input type="button" class="button-continue" id="box5" value="Continue" onclick="window.location.href='./notelist.html'"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

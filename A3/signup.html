@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="utf-8"/>
+        <title>Signup</title>
+        <link rel="stylesheet" href="mystyle.css">
+        <script type="text/javascript" src="validateSignUp.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>James Sieben's Note Application</h1>
+        </header>
+        <div class="container" id="container-other">
+
+            <div class="item2">
+                <h1>Please create an account</h1>
+
+                <form id="SignUp" class="login" method="POST" action="http://www.webdev.cs.uregina.ca/~jls273/A3/login.html">
+
+                    <label id="msg_email" class="err_msg"></label>
+                    <div class="input">
+                        <input id="box" type="text" name="email"/>
+                        <div class="username-label" data-dynamic-label-for="username">Email address</div>
+                    </div>
+
+                    <label id="msg_uname" class="err_msg"></label>
+                    <div class="input">
+                        <input id="box2" type="text" name="uname"/>
+                        <div class="username-label" data-dynamic-label-for="username">Username</div>
+                    </div>
+
+                    <label id="msg_pswd" class="err_msg"></label>
+                    <div class="input">
+                        <input id="box3" type="password" name="pswd"/>
+                        <div class="password-label" data-dynamic-label-for="username">Password</div>
+                    </div>
+
+                    <label id="msg_pswdr" class="err_msg"></label>
+                    <div class="input">
+                        <input id="box4" type="password" name="pswdr"/>
+                        <div class="password-label" data-dynamic-label-for="username">Confirm password</div>
+                    </div>
+
+                    <label id="msg_file" class="err_msg"></label>
+                    <div class="input2">
+                        <p>Upload a profile picture: <input type="file" id="file" name="file"/></p>
+                    </div>
+
+                    <div class="input">
+                        <input type="submit" class="button-continue" id="box5" value="Continue"/>
+                    </div>
+
+                </form>
+
+                <script type="text/javascript" src="validateSignUp-r.js"></script>
+
+                <div id="display_info"></div>
+
+            </div>
+        </div>
+    </body>
+</html>

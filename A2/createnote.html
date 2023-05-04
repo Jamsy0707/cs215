@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="utf-8"/>
+        <title>Create Note</title>
+        <link rel="stylesheet" href="mystyle.css">
+    </head>
+    <body>
+        <header>
+            <h1>James Sieben's Note Application</h1>
+            <p class="username">Hello <b>jls273!</b><input class="logoutbutton" type="button" value="logout" onclick="window.location.href='./login.html'"/></p>
+        </header>
+        <div class="container" id="container-other">
+            <div class="backbutton"><input class="backbutton" type="button" value="back" onclick="history.back()"/></div>
+            <div class="item2">
+                <h1><br><br><br>Create a new note:</h1>
+
+                <form>
+                    <div class="input">
+                        <input id="box" type="text" name="title">
+                        <div class="title-label" data-dynamic-label-for="title-label">Title</div>
+                    </div>
+                    <div class="input">
+                        <input type="button" class="button-continue" id="box2" value="Create" onclick="window.location.href='./viewnote.html'"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

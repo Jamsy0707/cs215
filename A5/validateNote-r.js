@@ -1,0 +1,1 @@
+document.getElementById("Create").addEventListener("submit", NoteForm, false);

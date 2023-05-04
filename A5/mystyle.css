@@ -1,0 +1,386 @@
+.access {
+    grid-column: 5 / 6;
+}
+
+.access-gr {
+    grid-column: 3 / 4;
+    margin-top: 3.5%;
+    margin-left: 70%;
+}
+
+.accessbutton {
+    border: 1px outset black;
+    border-radius: 5px;
+    background-color: #1346d3;
+    height: 20px;
+    width: 60px;
+    font-size: small;
+    color: white;
+    cursor: pointer;
+}
+
+.backbutton {
+    margin: 10%;
+    height: 20px;
+    width: 60px;
+    font-size: small;
+    cursor: pointer;
+}
+
+#box, #box2, #box3, #box4, #box5 {
+    width: 350px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.button {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(231, 2, 2);
+    height: 40px;
+    width: 120px;
+    font-size: small;
+    color: white;
+    cursor: pointer;
+    align-items: right;
+}
+
+#button-clear {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 1%;
+    min-height: 20px;
+    width: 60px;
+}
+
+.button-continue {
+    background-color: #10a33c;
+    color: white;
+    min-height: 60px;
+    cursor: pointer;
+    border: solid 1px black;
+}
+
+#button-edit {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+    border-radius: 5px;
+    margin-bottom: 1%;
+    min-height: 20px;
+    width: 60px;
+}
+
+#button2, #button3 {
+    background-color: rgb(10, 233, 10)
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr auto auto 1fr;
+    grid-template-columns: 1fr 10fr 1fr;
+    align-items: center, top;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container-other {
+    grid-template-rows: 1fr 4fr 1fr;
+}
+
+.create {
+    grid-column: 3 / 4;
+    align-items: right;
+    border: 1px solid black;
+    background-color: #10a33c;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    margin-top: 25%;
+    font-size: xxx-large;
+    cursor: pointer;
+}
+
+.created {
+    grid-column: 2 / 3;
+}
+
+.edit {
+    grid-column: 4 / 5;
+}
+
+#editlist {
+    grid-column: 2 / 3;
+}
+
+#edit-note {
+    grid-column: 1 / 4;
+    margin-bottom: 1%;
+    align-items: top;
+}
+
+#edit-note-area {
+    min-width: 95%;
+    min-height: 100px;
+    margin: 1%;
+    text-align: top, left;
+    align-items: top;
+    justify-content: top;
+    float: top;
+}
+
+.err_msg
+{
+	color:red; 
+	text-decoration:underline;
+}
+
+.err_msg_null
+{
+    opacity: 0%;
+}
+
+.forgot {
+    color: red;
+    border: none;
+    background-color: inherit;
+    margin: 5%;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    background-color: #10a33c;
+    text-align: center;
+    border: solid medium;
+    border-radius: 5px;
+}
+
+h1 {
+    grid-column: 2 / 3;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+h2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+}
+
+.info {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    margin-top: 40%;
+}
+
+.input {
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.input2 {
+    margin-bottom: 12px;
+    font-size: 14px;
+    text-align: right;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.item2 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.logoutbutton {
+    margin: 5%;
+    height: 20px;
+    width: 60px;
+    font-size: small;
+    cursor: pointer;
+}
+
+.mainheader {
+    font-size: xxx-large;
+}
+
+.name {
+    grid-column: 2 / 3;
+    font-size: x-large;
+    margin-top: 5%;
+}
+
+.note {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    height: min-content;
+    border: solid;
+    border-width: thin;
+    border-radius: 5px;
+    background-color: linen;
+    font-size: medium;
+    padding: 1%;
+    margin: 2%;
+}
+
+.note-view {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 20fr;
+    height: 100%;
+    width: 100%;
+    border: solid;
+    border-width: thin;
+    border-radius: 5px;
+    background-color: linen;
+    font-size: medium;
+    margin: 1%;
+    margin-top: 5%;
+    padding: 1%;
+}
+
+p {
+    font-size: 14px;
+}
+
+.picture {
+    grid-column: 1 / 2;
+    width: 75px;
+    height: 75px;
+}
+
+#picture-creator {
+    width: 100px;
+    height: 100px;
+}
+
+.picture-edit {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 12%;
+}
+
+#picturelist {
+    grid-column: 1 / 2;
+}
+
+.profile {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    margin-right: 30%;
+    margin-top: 40%;
+}
+
+.searchbutton {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(0, 183, 255);
+    height: 60px;
+    width: 180px;
+    float: center;
+    font-size: large;
+    color: white;
+    cursor: pointer;
+}
+
+.sharednotes {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    height: fit-content;
+    width: 100%;
+    padding: 2%;
+}
+
+.signup {
+    border: none;
+    background-color: inherit;
+    color: rgb(26, 127, 209);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#text {
+    grid-column: 3 / 4;
+    text-align: left;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.title {
+    grid-column: 3 / 4;
+    font-size: large;
+    font-weight: bold;
+}
+
+#title-note {
+    grid-column: 1 / 4;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.user {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: min-content;
+    font-size: medium;
+    margin: 1%;
+    background-color: linen;
+    border: solid thin;
+    border-radius: 5px;
+}
+
+.username {
+    grid-column: 3 / 4;
+}
+
+.view {
+    grid-column: 1 / 2;
+}
+
+.viewbutton {
+    border: 1px outset black;
+    border-radius: 5px;
+    background-color: #d313c9;
+    height: 20px;
+    width: 60px;
+    font-size: small;
+    color: white;
+    cursor: pointer;
+}
+
+.withaccess {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    height: fit-content;
+    width: 100%;
+    padding: 2%;
+}
+
+.withoutaccess {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    height: fit-content;
+    width: 100%;
+    padding: 2%;
+}
+
+.yournotes {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    height: fit-content;
+    width: 100%;
+    padding: 2%;
+}

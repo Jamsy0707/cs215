@@ -1,0 +1,45 @@
+mysql> UPDATE students
+    -> SET email='alabba200@cs.uregina.ca'
+    -> WHERE student_ID=200266200;
+
+mysql> UPDATE students
+    -> SET middle_Name=''
+    -> WHERE student_ID=200266210;
+
+mysql> UPDATE students
+    -> SET last_Name='Xu'
+    -> WHERE student_ID=200266210;
+
+mysql> UPDATE students
+    -> SET course_Description='Web and Database Programming'
+    -> where course_Name='CS215';
+
+mysql> DELETE FROM students WHERE course_Name='CS000';
+
+mysql> CREATE TABLE Student_Info (
+    -> student_ID varchar (30) NOT NULL,
+    -> first_Name varchar (30) NOT NULL,
+    -> middle_Name varchar (30),
+    -> last_Name varchar (30) NOT NULL,
+    -> email varchar (100) NOT NULL
+    -> );
+
+mysql> CREATE TABLE Courses (
+    -> course_Name varchar (30) NOT NULL,
+    -> course_Description varchar (255) NOT NULL
+    -> );
+
+mysql> CREATE TABLE Marks (
+    -> student_ID varchar (30) NOT NULL,
+    -> course_Name varchar (30) NOT NULL,
+    -> marks real NOT NULL
+    -> );
+
+mysql> insert into Student_Info (student_ID, first_Name, middle_Name, last_Name, email) select       
+    -> distinct student_ID, first_Name, middle_Name, last_Name, email from students;
+
+mysql> insert into Courses (course_Name, course_Description) select
+    -> distinct course_Name, course_Description from students;
+
+mysql> insert into Marks (student_ID, course_Name, marks) select
+    -> distinct student_ID, course_Name, marks from students;
