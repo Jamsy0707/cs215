@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="scripts.js"></script>
+
+</head>
+
+<body>
+    <form>
+        <h3>Please enter the first letter of the email: </h3>
+
+        <input type="text" id="search_text" />
+        <input type="button" id="search_button" value="Search" />
+    </form>
+
+    <table id="display_records" style="visibility: hidden;">
+        <thead>
+            <tr>
+                <th>Email</th>
+                <!-- TODO: add headers for Password and Birthday-->
+                <th>Password</th>
+                <th>Birthday</th>
+            </tr>
+        </thead>
+        <tbody id="display_area"></tbody>
+    </table>
+    <div id="display_messages">Students information will be listed here...</div>
+    <script src="events.js"></script>
+
+</body>
+
+</html>
